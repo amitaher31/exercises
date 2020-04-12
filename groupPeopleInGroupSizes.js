@@ -45,7 +45,6 @@ groupSizes.length == n
   
   Complezity = 
   - loops = for(n) => O(n)
-  - loop thru the map = constant time O(1)
   
   => O(n)
  */
