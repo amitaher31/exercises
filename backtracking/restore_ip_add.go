@@ -10,7 +10,7 @@ Example:
 Input: "25525511135"
 Output: ["255.255.11.135", "255.255.111.35"]
 */
-package exercises
+package main
 
 import (
 	"fmt"
@@ -19,6 +19,10 @@ import (
 )
 
 var result = []string{}
+
+func main() {
+	fmt.Println(restoreIpAddresses("25525511135"))
+}
 
 func restoreIpAddresses(s string) []string {
 	r := []string{}
@@ -31,7 +35,7 @@ func restoreIpAddresses(s string) []string {
 //25525511135
 // 2.5.5.255555*
 func helper(s string, r []string, start int) {
-	fmt.Printf("s = %+v, r = %+v \n", s, r)
+	fmt.Printf("r = %+v, start = %+v \n", r, start)
 	if len(r) == 4 && start == len(s) {
 		result = append(result, strings.Join(r, "."))
 		return
