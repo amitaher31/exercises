@@ -45,7 +45,8 @@ func main() {
 	fmt.Println(mymap.Get(3))
 }
 
-const capacity = 5
+//hashmap capacity
+const capacity = 500
 
 type Node struct {
 	Key   int
